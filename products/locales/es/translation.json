@@ -576,7 +576,7 @@
           "unused": "Sin usar",
           "used": "Usado"
         },
-        "heading": "Campos de destino",
+        "heading": "Columnas de Pulpos",
         "progressPill": {
           "missingRequiredFields": " - {{missingFieldsCount}} faltantes",
           "text": "{{totalDestinationsMapped}} de {{totalDestinationFields}}",
@@ -588,17 +588,17 @@
         }
       },
       "incomingFields": {
-        "heading": "Campos entrantes",
+        "heading": "Columnas de tu archivo",
         "progressPill": {
           "text": "{{totalIncomingMapped}} de {{totalIncomingFields}}",
           "tooltip": "Has mapeado {{mappedIncomingFields}} de {{totalIncomingFields}} campos de tu conjunto de datos a la hoja de destino"
         },
         "selectHeaders": {
-          "tooltip": "Edita los campos entrantes"
+          "tooltip": "Edita las columnas de tu archivo"
         }
       },
-      "subheading": "Revisa y confirma cada elección de mapeo",
-      "title": "Mapear campos"
+      "subheading": "Verifica que Pulpos entiende cuáles son las columnas de tu archivo",
+      "title": "Asignación de Columnas"
     },
     "mapHeaders": {
       "subheading": "Cambia o selecciona la fila de cabecera de los datos de origen",
