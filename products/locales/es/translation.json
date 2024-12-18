@@ -220,7 +220,7 @@
     "buttons": {
       "addFile": {
         "inProgressText": "Subir archivo",
-        "text": "Añadir archivo"
+        "text": "Subir archivo de inventario"
       },
       "addFileFrom": {
         "box": "Box",
@@ -693,7 +693,7 @@
         "heading": "¡Aún no hay nada que ver!"
       },
       "heading": "Comencemos",
-      "manualEntry": "Introducir datos manualmente",
+      "manualEntry": "Ingresar productos manualmente",
       "missingSheet": {
         "buttonLabel": "Volver a la hoja principal",
         "description": "La hoja a la que estás intentando acceder se ha eliminado o no existe.",
