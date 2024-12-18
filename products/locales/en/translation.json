@@ -1,0 +1,1442 @@
+{
+  "aiTransform": {
+    "changedColumnsText_one": "1 columna con datos cambiados",
+    "changedColumnsText_other": "{{count}} columnas con datos cambiados",
+    "changedColumnsText_zero": "{{count}} columnas con datos cambiados",
+    "errors": {
+      "entilementError": {
+        "content": "Si crees que esto es un error, por favor contacta al servicio de atención al cliente.",
+        "title": "¡Lo siento! No tienes acceso a esta característica."
+      },
+      "generalError": {
+        "title": "Algo salió mal. Por favor, inténtalo de nuevo."
+      },
+      "generateMutationError": {
+        "title": "No se puede alcanzar a la IA. Por favor, inténtalo más tarde."
+      },
+      "invalidFunctionError": {
+        "content": "Probablemente le pediste que hiciera algo inválido.",
+        "title": "Lo siento, el asistente de IA no puede realizar esa transformación."
+      },
+      "keysModifiedError": {
+        "title": "Lo siento, el asistente de IA solo puede modificar los valores de los campos existentes. No puede eliminar campos ni añadir nuevos."
+      },
+      "noFunctionError": {
+        "content": "Intenta formularla de manera diferente. Las indicaciones que incluyen nombres de campos tienden a tener más éxito.",
+        "title": "No pudimos entender tu indicación."
+      },
+      "noRecordsFoundError": {
+        "content": "No se encontraron registros para la consulta dada. Por favor, inténtalo de nuevo.",
+        "title": "No se encontraron registros"
+      },
+      "noresultsError": {
+        "content": "Intenta formularla de manera diferente. Las indicaciones que incluyen nombres de campos tienden a tener más éxito.",
+        "title": "Tu indicación no transformó ningún dato."
+      },
+      "prompttoolongError": {
+        "content": "Intenta acortar tu indicación o dividir tu indicación en varios pasos e inténtalo de nuevo.",
+        "title": "¡Lo siento! Tu indicación fue un poco larga."
+      },
+      "versionError": {
+        "content": "No se pudo crear una versión para revertir.",
+        "title": "Algo salió mal. Por favor, inténtalo de nuevo."
+      }
+    },
+    "exitConfirmation": {
+      "body": "¿Estás seguro de que quieres salir?",
+      "header": "Confirmación de salida",
+      "label": "Salir"
+    },
+    "jobCompleteHeading": "Trabajo de Transformación por IA completado",
+    "jobCompleteMessage": "Los registros han sido transformados",
+    "promptBar": {
+      "categoricalWarning": "Este campo tiene demasiadas opciones para que la Transformación por IA lo procese.",
+      "fieldTooltip": "{{key}}: {{description}}",
+      "transformButton": {
+        "tooltip": {
+          "active": "Describe cómo quieres que los datos de un campo sean transformados basándose en cualquier lógica, incluyendo datos en cualquier campo",
+          "disabled": "Debes tener algunos registros en tu hoja (filtrada) para usar el asistente de IA.",
+          "locked": "La hoja está bloqueada.",
+          "noRows": "Para usar el ayudante de IA, debes tener registros en tu hoja (filtrada).",
+          "readOnly": "La hoja es de solo lectura.",
+          "tooManyRows": "La hoja tiene demasiadas filas (más de 1 millón)."
+        }
+      },
+      "warning": "Nota: Algunos campos categóricos en tu conjunto de datos tienen muchas opciones configuradas. Usar esos campos, como @{{fieldName}}, en tu indicación podría no funcionar como esperas."
+    },
+    "sampleMessage": "Vista previa de {{number}} registros",
+    "scrollInfoText": "Desplazarse a la siguiente columna cambiada",
+    "toggleLabel": "Mostrar solo datos modificados"
+  },
+  "blocks": {
+    "embeddedDiff": {
+      "errors": {
+        "invalidDirection": "No se ha podido crear la Diff integrada debido a que la propiedad de la 'dirección' no es válida. Los valores válidos son: 'hoja_a_foto', 'foto_a_hoja'",
+        "missingIds": "No se ha podido crear la Diff integrada debido a que falta la identificación por Hoja, Cuaderno o Foto"
+      }
+    },
+    "embeddedSheet": {
+      "errors": {
+        "missingIds": "No se ha podido crear la Hoja integrada debido a que falta la identificación por Hoja o Cuaderno."
+      }
+    }
+  },
+  "checklist": {
+    "dropdowns": {
+      "headings": {
+        "sheet": "Hoja",
+        "workbook": "Cuaderno de trabajo"
+      }
+    },
+    "errors": {
+      "cannotLoadChecklist": "No se ha podido cargar la lista de verificación de datos",
+      "cannotLoadSheet": "No se ha encontrado la hoja",
+      "noWorkbooksDescription": "Las listas de comprobación de datos exigen que haya activo al menos 1 cuaderno de trabajo. Por favor, que su desarrollador compruebe la configuración. Si continúa este problema, póngase en contacto con asistencia.",
+      "noWorkbooksTitle": "Es obligatorio el cuaderno de trabajo"
+    },
+    "table": {
+      "dataTypes": {
+        "boolean": "Booleano",
+        "date": "Fecha",
+        "enum": "Enum",
+        "number": "Número",
+        "reference": "Referencia",
+        "string": "Serie",
+        "unknown": "Desconocido"
+      },
+      "fieldTagComputed": "Computado",
+      "fieldTagRequired": "Obligatorio",
+      "fieldTagUnique": "Único",
+      "headings": {
+        "dataType": "Tipo de datos",
+        "description": "Descripción",
+        "field": "Nombre del campo"
+      }
+    },
+    "title": "Lista de control de datos"
+  },
+  "commandMenu": {
+    "aiAssist": {
+      "query": {
+        "askingAI": {
+          "stepFour": "Finalizando",
+          "stepOne": "Pensando",
+          "stepThree": "En",
+          "stepTwo": "Escribir"
+        },
+        "description": {
+          "branded": "pide a la IA que escriba una consulta por ti en FFQL",
+          "whitelabeled": "pide a la IA que escriba una consulta por ti"
+        },
+        "errorBanner": {
+          "generalError": "Algo ha ido mal. Vuelve a intentarlo."
+        },
+        "instruction": "Indica cómo quieres que el asistente de IA consulte tus datos:",
+        "review": {
+          "description": "Esto es lo que se me ha ocurrido. Lee la explicación paso a paso y la consulta, y si te parece bien, haz clic abajo para aplicarlo.",
+          "explanationTitle": "Explicación",
+          "queryTitle": "Consulta"
+        }
+      },
+      "transform": {
+        "askingAI": {
+          "stepFour": "Finalizando",
+          "stepOne": "Pensando",
+          "stepThree": "En",
+          "stepTwo": "Escribir"
+        }
+      }
+    },
+    "buttons": {
+      "apply": "Aplicar",
+      "cancel": "Cancelar"
+    },
+    "commands": {
+      "filter": {
+        "apply": "Aplicar filtro.",
+        "description": {
+          "branded": "escribir una sentencia FFQL",
+          "whitelabeled": "escribir una consulta"
+        },
+        "hiddenColumnsWarning_one": "Se revelará 1 celda por esta consulta: {{fields}}",
+        "hiddenColumnsWarning_other": "Se revelarán {{count}} celdas por esta consulta: {{fields}}",
+        "hiddenColumnsWarning_zero": "{{count}} celdas serán reveladas por esta consulta: {{fields}}",
+        "invalidFFQL": "Sentencia FFQL inválida. ¿Volver a Intentarlo?",
+        "learnHow": "más información"
+      },
+      "search": {
+        "global": {
+          "apply": "Aplicar búsqueda.",
+          "description": "buscar en toda la hoja"
+        },
+        "inField": {
+          "apply": "Aplicar búsqueda dentro del campo.",
+          "applyExample": "es decir, ' first_name ' Jane Doe",
+          "description": "búsqueda dentro de un campo"
+        }
+      }
+    },
+    "itemMessage": "pulsa {{icon}} para aplicar",
+    "placeholder": "Encuentra o realiza cualquier cosa..."
+  },
+  "comments": {
+    "addReaction": "Añadir una reacción",
+    "commentDisabledTooltip": "Selecciona una celda o una fila para añadir un comentario",
+    "delete": "Borrar el comentario",
+    "edit": "Editar el comentario",
+    "edited": " (editado)",
+    "noResults": "Sin coincidencias",
+    "placeholder": "Añade tu comentario aquí...",
+    "reactionList": "<0></0> ha reaccionado con {{emoji}}",
+    "resolve": "Resolver el tema",
+    "send": "Enviar comentario",
+    "threadPlaceholder": "Responde o menciona a otros con @...",
+    "you": "Tú"
+  },
+  "document": {
+    "error": {
+      "description": "Parece que este documento no existe",
+      "title": "No se ha encontrado el documento"
+    }
+  },
+  "errors": {
+    "documentNotFound": "Documento no encontrado.",
+    "fileNotFound": "Archivo no encontrado",
+    "missingParameter": "Parámetro no proporcionado",
+    "notFound": "No se ha encontrado",
+    "notFoundPageDescription": "No existe ninguna página en esta dirección URL. Si esto es inesperado, póngase en contacto con el servicio de asistencia.",
+    "refreshButton": "Reintentar",
+    "refreshPageDescription": "Actualice la página para volver a intentarlo. Si el problema persiste, póngase en contacto con el servicio de asistencia.",
+    "returnToDashboardButton": "Volver al Panel de Control",
+    "sessionExpired": "La sesión ha caducado",
+    "sheetNotFound": "Hoja no encontrada",
+    "spaceNotFound": "Espacio no encontrado",
+    "unauthorized": "Sus credenciales de acceso no son válidas.",
+    "unknownError": "Algo ha salido mal",
+    "workbookNotFound": "Libro de trabajo no encontrado"
+  },
+  "files": {
+    "availableDownloadsTab": "Descargas disponibles",
+    "buttons": {
+      "addFile": {
+        "inProgressText": "Subir archivo",
+        "text": "Añadir archivo"
+      },
+      "addFileFrom": {
+        "box": "Box",
+        "googleDrive": "Google Drive",
+        "text": "Añadir archivo de..."
+      },
+      "delete": "Eliminar",
+      "download": "Descargar",
+      "googleDrive": "Añadir archivo desde Google Drive"
+    },
+    "connectionsModal": {
+      "box": "Box",
+      "close": "Cerrar",
+      "googleDrive": "Google Drive",
+      "heading": "Administre sus conexiones",
+      "manage": "Administrar",
+      "subtext": " Haga clic en los siguientes botones para entrar o salir de sus cuentas."
+    },
+    "contextMenu": {
+      "delete": "Eliminar",
+      "download": "Descargar"
+    },
+    "counts": "{{start}}-{{end}} de {{total}}",
+    "deleteModal": {
+      "downloadDescription_one": "Este archivo descargado se eliminará del espacio.",
+      "downloadDescription_other": "Estos archivos descargados se eliminarán del espacio.",
+      "downloadDescription_zero": "Estos archivos descargados se eliminarán del espacio.",
+      "heading_one": "Eliminar archivo",
+      "heading_other": "Eliminar archivos",
+      "heading_zero": "Eliminar archivos",
+      "subheading_one": "Archivo:",
+      "subheading_other": "Archivos:",
+      "subheading_zero": "Archivos:",
+      "uploadsDescription_one": "Todos los datos importados se guardarán. Esto eliminará el archivo del espacio.",
+      "uploadsDescription_other": "Todos los datos importados se guardarán. Esto eliminará los archivos del espacio.",
+      "uploadsDescription_zero": "Se guardarán todos los datos importados. Al hacer esto, se eliminarán los archivos del espacio."
+    },
+    "downloadsTable": {
+      "headings": {
+        "createdDate": "Generado",
+        "name": "Nombre",
+        "size": "Tamaño",
+        "sourceSheet": "Hoja de origen"
+      },
+      "processing": "Exportando..."
+    },
+    "emptyState": {
+      "downloads": {
+        "description": "Los datos descargados aparecerán aquí",
+        "heading": "No hay descargas disponibles"
+      },
+      "uploads": {
+        "description": "Sube un archivo con tu inventario para comenzar",
+        "heading": "Añadir archivos"
+      }
+    },
+    "errors": {
+      "loadingError": "No se han podido cargar los archivos",
+      "uploadDisabledDescription": "Si cree que esto es un error, hable con asistencia.",
+      "uploadDisabledHeading": "Este espacio no admite actualmente la subida de archivos."
+    },
+    "title": "Archivos",
+    "uploadedFilesTab": "Archivos subidos",
+    "uploadFile": {
+      "popovers": {
+        "errorUploading": "No se puede subir el archivo: {{fileName}}",
+        "extracting": "Extrayendo archivo...",
+        "extractionCompleted": "Extracción completada.",
+        "extractionFailed": "Extracción errónea. Inténtalo de nuevo o contacta con el equipo de asistencia.",
+        "onDragPopoverConfirmation": "Soltando archivo en:",
+        "unsupportedFile": "Tipo de archivo no compatible. Inténtalo con otro tipo de archivo o contacta con el equipo de asistencia.",
+        "unsupportedFileInfo": "No hemos detectado información en este archivo. Está disponible para descargar si es necesario.",
+        "uploadComplete": "Subido: {{fileName}}",
+        "uploadCompleteMany": "{{count}} archivos subidos",
+        "uploadError": "Error al subir {{fileName}}",
+        "uploadErrorMany": "Error al subir {{count}} archivos",
+        "uploadingMany": "Subiendo {{count}} archivos",
+        "uploadInProgress": "Subiendo: {{fileName}}",
+        "uploadInProgressMany": "Subiendo {{count}} archivos",
+        "uploadsDisabled": "Este espacio no admite actualmente la subida de archivos.",
+        "waitingForExtraction": "Esperando a la extracción del archivo..."
+      }
+    },
+    "uploadsTables": {
+      "headings": {
+        "name": "Nombre",
+        "status": "Estado",
+        "uploadedDate": "Subido"
+      },
+      "importButton": "Importar",
+      "importError": "No se puede localizar el archivo de origen a importar, inténtelo de nuevo. Si el problema persiste, póngase en contacto con el servicio de asistencia.",
+      "tooltips": {
+        "cannotImport": "Importar a un cuaderno de trabajo no está disponible para este archivo",
+        "noExtension": "El archivo no tiene extensión. Añada la extensión de archivo correcta al nombre del archivo y suba de nuevo el archivo para importarlo a un cuaderno de trabajo"
+      }
+    }
+  },
+  "guestInvite": {
+    "getNewAccessLink": {
+      "content": "Te hemos enviado un enlace de acceso seguro a",
+      "finePrint": "Si tienes problemas para encontrar el correo electrónico, comprueba tu carpeta de correo no deseado o actualiza esta página para enviar otro vínculo de acceso. El vínculo funcionará durante 5 minutos.",
+      "heading": "Comprueba tu bandeja de entrada"
+    }
+  },
+  "host": {
+    "modals": {
+      "closeModal": {
+        "message": "¿Estás seguro de que quieres cerrar esta ventana? Esto terminará tu sesión actual de importación de datos.",
+        "primaryButtonText": "Sí, salir",
+        "secondaryButtonText": "No, quedarse",
+        "title": "Cerrar ventana"
+      },
+      "errorModal": {
+        "title": "Algo ha salido mal"
+      }
+    }
+  },
+  "jobs": {
+    "customActions": {
+      "modals": {
+        "confirmModal": {
+          "cancelButton": "Cancelar",
+          "defaultConfirmButton": "Confirmar",
+          "defaultLoadingButton": "Cargando...",
+          "isRequired": "{{field}} es obligatorio",
+          "mustBeNumber": "{{field}} tiene que ser un número"
+        },
+        "defaultJobName": "Trabajo",
+        "defaultResourceName": "esta fuente",
+        "foregroundJobProgressModal": {
+          "defaultJobName": "Trabajo",
+          "defaultResourceName": "esta fuente",
+          "percentComplete": "{{percent}} % completado",
+          "runningOn": "en ejecución"
+        },
+        "outcomeModals": {
+          "acknowledgementModal": {
+            "defaultContinueButton": "Continuar"
+          },
+          "defaultDownloadLabel": "Descargar",
+          "defaultFileName": "archivo",
+          "defaultHeading": {
+            "failed": "Trabajo fallido",
+            "success": "Completado"
+          },
+          "defaultLabel": "Ver recurso",
+          "defaultMessage": {
+            "failed": "{{jobName}} fallido en {{resourceName}}",
+            "success": "{{jobName}} se ha ejecutado en {{resourceName}} correctamente"
+          },
+          "defaultRetryLabel": "Reintentar",
+          "defaultUrlLabel": "Visita la página web externa",
+          "defaultViewLabel": "  Actualizar vista",
+          "permanentOutcomeModal": {
+            "defaultContinueButton": "Continuar"
+          }
+        },
+        "startModal": {
+          "confirmButton": "Confirmar",
+          "errorMessage": "Error con la acción",
+          "loadingText": "Cargando..."
+        }
+      }
+    },
+    "download": {
+      "downloadStartedHeading": "Descarga iniciada",
+      "downloadStartedMessage": "La descarga debería haber iniciado automáticamente.",
+      "seeAllDownloads": "Ver todas las descargas"
+    },
+    "errors": {
+      "timeout": "El trabajo ha finalizado."
+    },
+    "info": {
+      "copiedPopover": "Identificación del trabajo copiada",
+      "copyIdTooltip": "Copiar la identificación del trabajo"
+    },
+    "messages": {
+      "startingJob": "Trabajo inicial"
+    },
+    "panel": {
+      "action": {
+        "export": "Descargar",
+        "extract": "Importar",
+        "mapping": "Ir a cuaderno de trabajo"
+      },
+      "empty": "Los trabajos aparecerán aquí cuando se estén ejecutando o estén completados",
+      "errorLoadingJob": "No se ha encontrado",
+      "heading": "Trabajos",
+      "status": {
+        "default": {
+          "canceled": {
+            "prefix": "Trabajo",
+            "suffix": "cancelado"
+          },
+          "complete": {
+            "prefix": "Trabajo",
+            "suffix": "completado"
+          },
+          "failed": {
+            "prefix": "Trabajo",
+            "suffix": "fallido"
+          },
+          "inProgress": "Ejecutando trabajo",
+          "waiting": "Esperando:"
+        },
+        "delete": {
+          "cancelled": "Cancelado borrado de registros",
+          "complete": "Supresión completada",
+          "failed": "Borrado fallido",
+          "inProgress": "Borrando registros",
+          "waiting": "Esperando a eliminar los registros"
+        },
+        "export": {
+          "canceled": "Descarga cancelada",
+          "complete": "Descarga generada",
+          "failed": "Fallo al generar descarga",
+          "inProgress": "Generando descarga",
+          "waiting": "Esperando a generar descarga"
+        },
+        "extract": {
+          "cancelled": "Cancelada extracción de archivo",
+          "complete": "Archivo extraído",
+          "failed": "Fallo al extraer archivo",
+          "inProgress": "Extrayendo archivo",
+          "waiting": "Esperando a extraer el archivo"
+        },
+        "flatfile-add-column": {
+          "canceled": "Añadir columna cancelado",
+          "complete": "Añadir columna completado",
+          "failed": "Error al añadir columna",
+          "inProgress": "Añadiendo columna",
+          "waiting": "Esperando para añadir columna"
+        },
+        "flatfile-remove-column": {
+          "canceled": "Eliminar columna cancelado",
+          "complete": "Eliminar columna completado",
+          "failed": "Error al eliminar columna",
+          "inProgress": "Eliminando columna",
+          "waiting": "Esperando para eliminar columna"
+        },
+        "mapping": {
+          "canceled": "Cancelado mapeado al cuaderno de trabajo",
+          "complete": "Mapeado al cuaderno de trabajo",
+          "failed": "Fallo al mapear al cuaderno de trabajo",
+          "inProgress": "Mapeando al cuaderno de trabajo",
+          "waiting": "Esperando al mapa al cuaderno"
+        },
+        "mutate-records": {
+          "canceled": "Transformación por IA cancelada",
+          "complete": "Transformación por IA completada",
+          "failed": "La transformación por IA falló",
+          "inProgress": "Transformando registros con IA",
+          "waiting": "Esperando a transformar registros con IA"
+        }
+      },
+      "time": {
+        "calculating": "Calculando tiempo restante...",
+        "completed": "Completado en",
+        "failed": "Fallido tras",
+        "remaining": "restante",
+        "started": "Iniciado a las {{time}}",
+        "units": {
+          "hour": "hr",
+          "minute": "min",
+          "second": "seg"
+        }
+      }
+    },
+    "pill": {
+      "hoverText": "Trabajos",
+      "multipleJobsRunning": "{{count}} trabajos en ejecución",
+      "status": {
+        "default": {
+          "complete": "Trabajo terminado",
+          "failed": "Trabajo fallido",
+          "inProgress": "Trabajo"
+        },
+        "delete": {
+          "complete": "Supresión completada",
+          "failed": "Borrado fallido",
+          "inProgress": "Eliminar registros..."
+        },
+        "extract": {
+          "complete": "Extracción finalizada",
+          "failed": "Extracción fallida",
+          "inProgress": "Extraer datos..."
+        },
+        "mapping": {
+          "complete": "Asignación finalizada",
+          "failed": "Asignación fallida",
+          "inProgress": "Asignación..."
+        }
+      }
+    },
+    "submit": {
+      "button": {
+        "defaultLabel": "Enviar"
+      }
+    }
+  },
+  "mapping": {
+    "clearFields": {
+      "modalHeader": "Borrar campos de destino",
+      "modalLabel": "Borrar",
+      "modalText": "Se borrarán todas las asignaciones existentes para esta importación",
+      "modalTooltip": "Borrar campos de destino"
+    },
+    "dataPreview": {
+      "heading": "Vista previa de los datos para {{previewKey}}",
+      "noData": "Sin datos previos"
+    },
+    "dropdown": {
+      "placeholder": "Seleccionar..."
+    },
+    "headerButtons": {
+      "back": "Atrás",
+      "complete": "Completar",
+      "exit": "Salir",
+      "headers": "Elegir cabeceros",
+      "next": "Continuar"
+    },
+    "mapEnums": {
+      "destinationFields": {
+        "dropdownOptions": {
+          "doNotImport": "No importar",
+          "keepAsIs": "Mantenga este valor tal como está",
+          "keepAsIsDisabledTooltip": "Añadir una nueva opción a esta lista no es posible. La importación de un valor que no sea una opción válida se mostrará como un error."
+        },
+        "heading": "Valores de destino"
+      },
+      "incomingFields": {
+        "heading": "Valores recibidos",
+        "noData": "Celdas sin datos",
+        "noDataTooltip": "Puede seleccionar una opción válida para rellenar todas las celdas vacías. También puede dejarlo en blanco."
+      },
+      "progressPill_one": "{{mappedCount}} de {{count}} valores asignados",
+      "progressPill_other": "{{mappedCount}} de {{count}} valores asignados",
+      "progressPill_zero": "{{mappedCount}} de {{count}} valores asignados",
+      "progressPillAllMapped_one": "{{count}} valores asignados",
+      "progressPillAllMapped_other": "{{count}} valor asignado",
+      "progressPillAllMapped_zero": "{{count}} value mapped",
+      "subheading": "Estos campos tienen valores que se deben asignar a una lista de opciones válidas.",
+      "title": "Campos del mapa"
+    },
+    "mapFields": {
+      "destinationFields": {
+        "addNewField": {
+          "description": "Añada este campo a su hoja",
+          "label": "Añadir como nuevo campo"
+        },
+        "dropdownOptionLabels": {
+          "new": "Añadir nuevo",
+          "unused": "Sin usar",
+          "used": "Usado"
+        },
+        "heading": "Campos de destino",
+        "progressPill": {
+          "missingRequiredFields": " - {{missingFieldsCount}} faltantes",
+          "text": "{{totalDestinationsMapped}} de {{totalDestinationFields}}",
+          "tooltip": {
+            "greaterThanTenMissing": "y {{missingFieldsAfterTen}} más...",
+            "missingRequiredFields": "Faltan campos obligatorios:",
+            "progress": "{{mappedDestinationFields}} de los {{totalDestinationFields}} campos disponibles en la hoja de destino han sido mapeados a"
+          }
+        }
+      },
+      "incomingFields": {
+        "heading": "Campos entrantes",
+        "progressPill": {
+          "text": "{{totalIncomingMapped}} de {{totalIncomingFields}}",
+          "tooltip": "Has mapeado {{mappedIncomingFields}} de {{totalIncomingFields}} campos de tu conjunto de datos a la hoja de destino"
+        },
+        "selectHeaders": {
+          "tooltip": "Edita los campos entrantes"
+        }
+      },
+      "subheading": "Revisa y confirma cada elección de mapeo",
+      "title": "Mapear campos"
+    },
+    "mapHeaders": {
+      "subheading": "Cambia o selecciona la fila de cabecera de los datos de origen",
+      "title": "Encabezados de mapas"
+    },
+    "mappingPlan": {
+      "preparing": "Preparando mapeo..."
+    },
+    "sheetSelection": {
+      "cannotLoadFile": "No se puede subir el archivo: {{fileName}}",
+      "cannotStartMapping": "No se puede continuar con la asignación - {{reason}} - Inténtelo de nuevo",
+      "columns_one": "1 columna",
+      "columns_other": "{{count}} columnas",
+      "columns_zero": "{{count}} columnas",
+      "errors_one": "1 error",
+      "errors_other": "{{count}} errores",
+      "errors_zero": "{{count}} errores",
+      "importFromHeading": "Selecciona una hoja para cargar datos",
+      "importToHeading": "Selecciona una hoja para importar estos datos",
+      "lastUpdated": "Última actualización {{date}}",
+      "lastUpdatedDateFormat": "aaaa-mm-dd",
+      "records_one": "1 registro",
+      "records_other": "{{count}} registros",
+      "records_zero": "{{count}} registros",
+      "sheetHasNoData": "Sin datos",
+      "sheets_one": "1 hoja",
+      "sheets_other": "{{count}} hojas",
+      "sheets_zero": "{{count}} hojas",
+      "title": "Importar a...",
+      "updatedAtDateFormat": "aaaa-MM-dd"
+    }
+  },
+  "nativeActions": {
+    "addColumn": "Añadir columna",
+    "clearColumn": "Borrar columna",
+    "removeColumn": "Eliminar columna"
+  },
+  "platform": {
+    "pubnub": {
+      "errors": {
+        "refreshTokenActionLabel": "Actualizar página",
+        "refreshTokenFailed": "Transmisión de eventos desconectada: actualice la página para volver a conectarse."
+      }
+    }
+  },
+  "plugins": {
+    "viewMapped": {
+      "almostDone": "Casi listo...",
+      "complete": "Actualización de la tabla completada. Por favor, revisa los datos.",
+      "error": "Se produjo un error al actualizar el libro de trabajo. Consulta los registros de eventos.",
+      "halfway": "Estamos a mitad de camino, espera un momento...",
+      "updatingTable": "Actualizando la tabla para mostrar solo los campos asignados"
+    }
+  },
+  "sheet": {
+    "columnManagement": {
+      "clear_empty": "Borrar columnas vacías",
+      "errorColumnTooltip": "Filtrar por este valor revelará esta columna.",
+      "hideAll": "Ocultar todo",
+      "hideEmpty": "Ocultar columnas vacías",
+      "hideEmptyFields": "Ocultar columnas sin datos",
+      "noFields": "Sin celdas.",
+      "noMatches": "Sin coincidencias.",
+      "placeholder_one": "Buscar o seleccionar desde la celda 1...",
+      "placeholder_other": "Buscar o seleccionar desde los campos {{count}}...",
+      "placeholder_zero": "Buscar o seleccionar desde las celdas {{count}}...",
+      "toast": {
+        "action": "¿Revelar?",
+        "message_one": "Se ocultó 1 columna con errores.",
+        "message_other": "{{count}} columnas con errores se ocultaron.",
+        "message_zero": "Se ocultaron {{count}} columnas con errores."
+      },
+      "tooltip_one": "1 columna oculta.",
+      "tooltip_other": "{{count}} columnas ocultas.",
+      "tooltip_zero": "Gestionar columnas.",
+      "unhideToast": {
+        "message_one": "Se reveló 1 columna por esta consulta.",
+        "message_other": "{{count}} columnas fueron reveladas por esta consulta.",
+        "message_zero": "Se revelaron {{count}} columnas por esta consulta."
+      }
+    },
+    "comments": {
+      "tooltip": "Añade un comentario"
+    },
+    "embedded": {
+      "maxOpenReached": "No se pueden abrir más de {{maxOpenSheets}} hojas incrustadas a la vez. Cierra una hoja incrustada para abrir esta.",
+      "untitled": "Hoja sin título"
+    },
+    "emptyView": {
+      "defaultError": {
+        "description": "Parece que esta hoja está vacía.",
+        "heading": "¡Aún no hay nada que ver!"
+      },
+      "heading": "Comencemos",
+      "manualEntry": "Introducir datos manualmente",
+      "missingSheet": {
+        "buttonLabel": "Volver a la hoja principal",
+        "description": "La hoja a la que estás intentando acceder se ha eliminado o no existe.",
+        "heading": "No se ha encontrado la hoja"
+      },
+      "noColumns": {
+        "description": "Has ocultado todas las columnas.",
+        "heading": "¡Nada para ver!"
+      },
+      "noSheetError": {
+        "description": "Parece que esta hoja no existe.",
+        "heading": "No se ha encontrado la hoja"
+      },
+      "readOnly": {
+        "description": "Las hojas que no aceptan nuevas filas o ediciones suelen recibir datos rellenados dinámicamente. No hay ninguna acción que puedas tomar en este momento.",
+        "heading": "En espera de los datos"
+      },
+      "sheetLocked": {
+        "description": "Si crees que esto es un error, ponte en contacto con el servicio de asistencia.",
+        "heading": "La adición de registros está desactivada"
+      },
+      "uploadFile": "Arrastra y suelta o sube un archivo para comenzar"
+    },
+    "errors": {
+      "loading": "No se ha podido recuperar el libro de trabajo.",
+      "noSheets": {
+        "description": "Un libro de trabajo debe contener al menos una hoja. No se ha encontrado ninguna.",
+        "title": "El libro de trabajo no contiene hojas"
+      },
+      "notFound": "Libro de trabajo no encontrado"
+    },
+    "info": {
+      "browser": "Buscador",
+      "copiedPopover": "Copiado al portapapeles",
+      "copyButton": "¡Haz clic para copiar!",
+      "date": "Fecha",
+      "environment": "Entorno",
+      "inFrame": "En iframe",
+      "referrer": "Recomendante",
+      "release": "Versión actual",
+      "sheet": "Hoja",
+      "space": "Espacio",
+      "workbook": "Libro de trabajo"
+    },
+    "popovers": {
+      "copyCell_one": "{{count}} celda copiada",
+      "copyCell_other": "{{count}} celdas copiadas",
+      "copyCell_zero": "{{count}} celdas copiadas",
+      "copyRecord_one": "{{count}} registro copiado",
+      "copyRecord_other": "{{count}} registros copiados",
+      "copyRecord_zero": "{{count}} registros copiados",
+      "errors": {
+        "cellUpdateFailed": "Ha ocurrido un error. Actualiza la página e inténtalo de nuevo. Si el problema persiste, ponte en contacto con el servicio de asistencia",
+        "invalidFFQL": "Comprueba tu consulta",
+        "invalidFFQLSearch": "Sentencia FFQL inválida.",
+        "learnMore": "Saber más.",
+        "recordsLoadFailed": "No se han podido cargar los registros"
+      }
+    },
+    "table": {
+      "cells": {
+        "enum": {
+          "loading": "Cargando opciones...",
+          "loadingError": "No fue posible cargar las opciones.",
+          "noMatchesFound": "No se hallaron coincidencias.",
+          "placeholder": "Escriba aquí...",
+          "seeMore": "Buscar para ver más opciones."
+        },
+        "messages": {
+          "autogen": "✨ Generado automáticamente",
+          "compositeUnique": "🧑‍🍳 Compuesto {{name}} no es único",
+          "invalidOption": "Opción no válida",
+          "invalidValue": "El valor no es una opción válida",
+          "reference": "Ese valor no existe en la tabla de referencia.",
+          "req": "Se requiere {{field}}.",
+          "transformed": "🪄️ Transformado desde {{originalValue}}",
+          "unique": "El valor no es único."
+        }
+      },
+      "contextMenu": {
+        "filterByValue": {
+          "label": "Filtrar por valor",
+          "moreOptions": "Mostrando las primeras {{pageSize}} opciones. Busca para ver más.",
+          "noData": "no hay datos",
+          "placeholder": "Buscar o seleccionar valores..."
+        },
+        "findAndReplace": {
+          "findAndReplaceValues": "Encontrar y reemplazar",
+          "modal": {
+            "cancelButton": "Cancelar",
+            "descriptionExactOnly": "Sustituir cualquier texto de esta columna por un valor válido. Sólo buscamos coincidencias exactas.",
+            "descriptionPartialAndExact": "Reemplazar en bloque cualquier texto en esta columna. Admitimos coincidencias parciales y exactas para estos datos.",
+            "errors": {
+              "findError": "Hubo un error al buscar los valores.",
+              "generalError": "Algo salió mal. Por favor, vuelva a intentarlo.",
+              "replaceError": "Hubo un error al reemplazar los valores."
+            },
+            "exactMatchesOnly": "Sacar solo coincidencias exactas",
+            "finding": "Encontrar todas las instancias",
+            "heading": "Encontrar y reemplazar en {{columnName}}",
+            "isFiltered": "Se ha filtrado este conjunto de datos. Buscar y reemplazar sólo se ejecutará en los registros filtrados.",
+            "replaceButton": "Reemplazar todo",
+            "replaceEmpty": {
+              "description": {
+                "addValues": "Esto rellenará todas las celdas vacías en {{columnName}}.",
+                "addValuesToAll": "Están vacías todas las celdas en {{columnName}}, puedes rellenarlas en bloque con un valor seleccionado.",
+                "addValuesToCount_one": "Hay {{formattedCount}} celda vacía en {{columnName}}, puedes rellenarlas en bloque con un valor seleccionado.",
+                "addValuesToCount_other": "Hay {{formattedCount}} celdas vacías en {{columnName}}, puedes rellenarlas en bloque con un valor seleccionado.",
+                "addValuesToCount_zero": "Hay {{formattedCount}} celdas vacías en {{columnName}}, puedes rellenarlas en bloque con un valor seleccionado. ",
+                "noEmptyValues": "No hemos podido encontrar ninguna celda vacía en este campo."
+              },
+              "heading": {
+                "addValues": "Añadir un valor a las celdas vacías en {{columnName}}.",
+                "addValuesToAll": "Añadir un valor a todas las celdas vacías en {{columnName}}.",
+                "addValuesToCount_one": "Añadir un valor a {{formattedCount}} celda vacía en {{columnName}}.",
+                "addValuesToCount_other": "Añadir un valor a {{formattedCount}} celdas vacías {{columnName}}.",
+                "addValuesToCount_zero": "Añadir un valor a {{formattedCount}} celdas vacías en {{columnName}}.",
+                "noEmptyValues": "No se han encontrado valores vacíos."
+              }
+            },
+            "replaceEnum": {
+              "moreOptions": "Mostrando las primeras 100 opciones. Buscar para ver más.",
+              "noMatchesFound": "No se hallaron coincidencias.",
+              "replaceWith": "Reemplazar con..."
+            },
+            "replaceValue": {
+              "leavingBlank": "Al dejar esta campo en blanco, se eliminarán los valores seleccionados.",
+              "noMatchesFound": "No se han encontrado valores",
+              "replaceWith": "Reemplazar con..."
+            },
+            "replacing": "Reemplazando valores",
+            "runOnAllRecords": "Ejecutar en todos los registros",
+            "searchForEmpty": "Si este campo se deja vacío, buscaremos los valores vacíos.",
+            "searchForText": "Buscar por texto...",
+            "searchResultsCount_one": "{{count}} coincidencia",
+            "searchResultsCount_other": "{{count}} coincidencias ",
+            "searchResultsCount_zero": "{{count}} coincidencias"
+          },
+          "replaceEmptyValues": "Reemplazar valores vacíos"
+        },
+        "pin": {
+          "apply": "Fijar columna",
+          "remove": "Eliminar fijado",
+          "tooltip": {
+            "maxPinned": "Puedes fijar hasta tres columnas; tienes que dejar de fijar una de las que ya tienes para poder fijar esta columna.",
+            "pin": "Fijar esta columna a la izquierda de la tabla",
+            "unpin": "Hacer clic para dejar de fijar columna"
+          }
+        },
+        "searchInField": {
+          "modal": {
+            "cancelButton": "Cancelar",
+            "placeholder": "Buscando...",
+            "searchButton": "Buscar",
+            "searchWithin": "Buscar al interior"
+          },
+          "searchInThisField": "Buscar en este campo"
+        },
+        "sort": {
+          "ascending": {
+            "apply": "Ordenar A-Z",
+            "remove": "Eliminar orden A-Z"
+          },
+          "descending": {
+            "apply": "Ordenar Z-A",
+            "remove": "Eliminar orden Z-A"
+          },
+          "tooltip": {
+            "notSorted": "Hacer clic para ordenar A-Z",
+            "sortedAsc": "Ordenado A-Z",
+            "sortedDes": "Ordenado Z-A"
+          }
+        }
+      },
+      "errors": {
+        "description": "La tabla tiene problemas para mostrar estos datos. Consulta la consola para ver la información del error.",
+        "title": "Algo ha salido mal"
+      },
+      "header": {
+        "tooltip": {
+          "key": "clave: {{key}}",
+          "label": "etiqueta: {{label}}"
+        }
+      },
+      "indexRow": {
+        "tooltip": {
+          "createRow": "Añada datos para crear esta fila.",
+          "noData": "No hay filas disponibles para seleccionar. Sólo las filas con datos pueden ser seleccionadas.",
+          "rowNumber": "Fila {{number}}"
+        }
+      },
+      "maximumMessage": {
+        "plural": "... y {{hiddenRows}} filas más. Las vistas de la tabla solo admiten hasta 500 000 registros a la vez por las limitaciones del navegador. La búsqueda, ordenación, filtros y acciones masivas seguirán funcionando en todas las filas ocultas a la vista.",
+        "singular": "...y 1 fila más. Las vistas de la tabla solo admiten hasta 500 000 registros a la vez por las limitaciones del navegador. La búsqueda, ordenación, filtros y acciones masivas seguirán funcionando en todas las filas ocultas a la vista."
+      },
+      "modals": {
+        "copyAlert": {
+          "cancelButton": "Cancelar",
+          "description": "Hemos observado que estás intentando seleccionar más de 100 registros. Limitamos la copia a 100 registros para mantener la integridad de tus datos.",
+          "download": "¿Quieres descargar esta hoja en formato .csv?",
+          "downloadButton": "Descargar",
+          "heading": "¿Quieres descargar este archivo?"
+        },
+        "deleteAlert": {
+          "description": "En este momento no es posible eliminar más de 100 registros existentes. Hemos limitado esta opción para ofrecerte una mejor experiencia mientras <1>modificamos</1> tus datos de forma inteligente.",
+          "dismissButton": "Descartar",
+          "heading": "¡Has alcanzado nuestro límite de eliminado!",
+          "tooltip": "Eliminar registros vacíos, duplicados, etc."
+        },
+        "pasteAlert": {
+          "description": "En este momento no es posible pegar más de 100 registros existentes. Hemos limitado esta opción para ofrecerte una mejor experiencia mientras <1>modificamos</1> tus datos de forma inteligente.",
+          "dismissButton": "Descartar",
+          "heading": "¡Has alcanzado nuestro límite de pegado!",
+          "tooltip": "Eliminar registros vacíos, duplicados, etc."
+        }
+      }
+    },
+    "toolbar": {
+      "actionsDropdown": {
+        "buttonText": "Acciones",
+        "placeholder": "Buscar o seleccionar..."
+      },
+      "aiAssist": {
+        "buttonText": "Asistencia mediante IA",
+        "query": "Consulta",
+        "transform": "Transformar"
+      },
+      "buttons": {
+        "delete": {
+          "modal": {
+            "cancelButton": "Cancelar",
+            "confirmButton": "Eliminar registros",
+            "description": {
+              "infix": "seleccionados",
+              "infixType": {
+                "invalid": "no válidos",
+                "valid": "válidos"
+              },
+              "prefix": "¿Quieres eliminar los",
+              "suffix_one": "registro?",
+              "suffix_other": "registros?",
+              "suffix_zero": "registros?"
+            },
+            "errorMessage": "No se han podido eliminar los registros. Inténtalo de nuevo o modifica tu selección.",
+            "heading_one": "Eliminar registro",
+            "heading_other": "Eliminar registros",
+            "heading_zero": "Eliminar registros",
+            "inProgress": "Eliminando registros..."
+          },
+          "popover": {
+            "successMessage_one": "{{count}} registro eliminado",
+            "successMessage_other": "{{count}} registros eliminados",
+            "successMessage_zero": "{{count}} registros eliminados",
+            "successMessageNoCount": "Registros eliminados"
+          },
+          "tooltip": {
+            "active": "Eliminar los registros seleccionados.",
+            "disabled": {
+              "deleteDisabled": "El borrado de registros está deshabilitado en esta Hoja.",
+              "noRecordsSelected": "Seleccione por lo menos un registro para borrarlo."
+            }
+          }
+        },
+        "download": {
+          "modal": {
+            "cancelButton": "Cancelar",
+            "confirmButton": "Descargar registros",
+            "description": {
+              "infix": "seleccionados",
+              "infixType": {
+                "invalid": "no válidos",
+                "valid": "válidos"
+              },
+              "prefix": "¿Quieres descargar los",
+              "suffix_one": "registro?",
+              "suffix_other": "registros?",
+              "suffix_zero": "registros?"
+            },
+            "errorMessage": "No se han podido descargar los registros. Inténtalo de nuevo o modifica tu selección.",
+            "heading_one": "Descargar registro",
+            "heading_other": "Descargar registros",
+            "heading_zero": "Descargar registros",
+            "inProgress": "Descargando registros..."
+          },
+          "tooltip": {
+            "active": {
+              "invalidFilterApplied": "Descargar todos los registros inválidos.",
+              "noRecordsSelected": "Descargar esta hoja.",
+              "recordsSelected": "Descargar los registros seleccionados.",
+              "validFilterApplied": "Descargar todos los registros válidos."
+            },
+            "disabled": "No hay registros para descargar."
+          }
+        }
+      },
+      "customActionsDropdown": {
+        "disabledTooltip": {
+          "hasData": "Esta acción estará disponible una vez que haya al menos un registro en esta hoja.",
+          "requireAllValid": "Esta acción requiere que todas las filas seleccionadas sean válidas.",
+          "requireAllValidTotal": "Este proceso necesita que todas las filas sean válidas",
+          "requireSelection": "Seleccione uno o más registros para acceder a esta acción."
+        }
+      },
+      "dropdown": {
+        "delete": "Eliminar",
+        "download": "Descargar"
+      },
+      "filterByError": {
+        "buttonText": "Filtrar por tipo de error",
+        "dropdownPlaceholder": "Buscar o seleccionar..."
+      },
+      "filters": {
+        "all": "Todo",
+        "invalid": "Inválido",
+        "tooltip": {
+          "countsError": "Error al cargar los cálculos",
+          "countsErrorRetry": "Haz clic para reintentarlo",
+          "filter": {
+            "invalid": "inválido",
+            "total": "total",
+            "valid": "válido"
+          },
+          "filtered": "Esta base de datos fue filtrada para mostrar {{filteredCount}} de los {{countString}} {{filter}} registros.",
+          "filteredByError": "Esta base de datos fue filtrada mediante el filtro de error para mostrar {{filteredCount}} de los {{countString}} {{filter}} registros.",
+          "filteredByFFQL": {
+            "branded": "Este conjunto de datos se ha filtrado mediante Flatfile Query Language para mostrar {{filteredCount}} de los {{countString}} registros {{filter}}.",
+            "whitelabeled": "Este conjunto de datos se ha filtrado para mostrar {{filteredCount}} de los {{countString}} registros {{filter}}."
+          },
+          "filteredBySearch": "Esta base de datos fue filtrada mediante una búsqueda para mostrar {{filteredCount}} de los {{countString}} {{filter}} registros.",
+          "filteredBySearchAndError": "Esta base de datos fue filtrada mediante una búsqueda y el filtro de error para mostrar {{filteredCount}} de los {{countString}} {{filter}} registros.",
+          "inactiveCount": "{{countString}} {{filter}} registros {{filteredCount}} filtrados"
+        },
+        "valid": "Validar"
+      },
+      "moreActions": {
+        "buttonText": "Más acciones",
+        "placeholder": "Buscar o seleccionar..."
+      },
+      "savedViews": {
+        "buttonText": "Vistas",
+        "groups": {
+          "allViews": "TODAS LAS VISTAS",
+          "myViews": "MIS VISTAS"
+        },
+        "modalHeader": "Vistas guardadas",
+        "modalSubheader": "Selecciona una vista guardada para aplicar a esta Hoja.",
+        "searchPlaceholder": "Buscar o seleccionar...",
+        "tooltip": "Aplicar vista y copiar enlace",
+        "viewAppliedPopover": "¡Se ha copiado tu vista al portapapeles!"
+      },
+      "saveView": {
+        "buttons": {
+          "cancel": "Cancelar",
+          "copy": {
+            "label": "Copiar para compartir",
+            "successLabel": "¡Copiado al portapapeles!",
+            "warningTooltip": "Solo las personas con acceso a este Espacio pueden abrir con el enlace."
+          },
+          "save": {
+            "label": "Guardar vista",
+            "labelActive": "Guardando vista"
+          }
+        },
+        "error": {
+          "saveText": "No se ha podido guardar la vista: inténtalo de nuevo."
+        },
+        "headings": {
+          "saveHeader": "Guardar vista",
+          "saveSubheader": "Elige un nombre que refleje el propósito de esta vista. Esto ayudará a los usuarios a identificar fácilmente su uso.",
+          "shareHeader": "Compartir"
+        },
+        "nameViewInput": {
+          "helperText": "Recuerda, esta vista estará visible para todas las personas que tengan acceso a esta Hoja.",
+          "label": "nombre",
+          "placeholder": "Ver desde {{timestamp}}"
+        },
+        "summary": {
+          "filter": "registros que están",
+          "filterFieldpt1": "si",
+          "filterFieldpt2": "tiene error",
+          "invalid": "No válido",
+          "q": "donde",
+          "searchValue": "cualquier campo que contenga",
+          "title": "Resumen",
+          "valid": "Válido"
+        }
+      },
+      "searchBar": {
+        "expandTooltip": "Abrir búsqueda y asistente IA.",
+        "placeholder": "Buscando...",
+        "tooltip": "Pulse enter para buscar."
+      },
+      "tooltips": {
+        "lockedUntilEditingCompletes": "La barra de herramientas estará disponible cuando la hoja ya no se esté editando",
+        "lockedUntilHookCompletes": "La barra de herramientas estará disponible después de que todos los ganchos terminen de ejecutarse.",
+        "lockedUntilJobCompletes": "La barra de herramientas estará disponible después de completarse el trabajo actual"
+      }
+    },
+    "workbookActions": {
+      "disabledTooltip": {
+        "hasData": "Esta acción estará disponible una vez que haya al menos un registro en este libro.",
+        "hasPendingValidation": "La validación de tu cuaderno de ejercicios está actualmente en curso...",
+        "lockedUntilEditingCompletes": "La acción estará disponible cuando la hoja ya no se esté editando",
+        "lockedUntilHookCompletes": "Esta acción estará disponible después de que todos los ganchos hayan terminado de ejecutarse.",
+        "lockedUntilJobCompletes": "Esta acción estará disponible después de que el trabajo actual se complete.",
+        "requireAllValid": "Esta acción requiere que todas las filas de todas las hojas sean válidas"
+      }
+    }
+  },
+  "sidebar": {
+    "addConnection": "Añadir conexión",
+    "checklist": "Lista de control de datos",
+    "connections": {
+      "tooltips": {
+        "connectionError": "Hay un problema al verificar los metadatos de las conexiones de este libro de trabajo.",
+        "connectionFresh": "Conectado a {{source}} a través de {{service}}",
+        "connectionStale": "Última sincronización con {{source}} hace más de 24 horas"
+      }
+    },
+    "emptyWorkbook": "Libro de trabajo vacío",
+    "files": "Archivos",
+    "lockedIconTooltip": "Esta hoja está bloqueada",
+    "readOnlyIconTooltip": "Esta hoja es de solo lectura",
+    "spaceSwitcher": {
+      "placeholder": "Buscar o seleccionar Espacio..."
+    },
+    "toggle": {
+      "hide": "Ocultar barra lateral",
+      "show": "Mostrar barra lateral"
+    }
+  },
+  "snapshot": {
+    "accept": {
+      "cancelButton": "Cancelar",
+      "cancelError": "No se han podido revertir los cambios debido a un error inesperado.",
+      "cancelSuccess": "Se han revertido satisfactoriamente los cambios en la hoja.",
+      "empty": {
+        "createdSince": "Esta captura no tiene registros eliminados.",
+        "deletedSince": "Esta captura no tiene registros añadidos.",
+        "title": "¡No hay nada que ver!",
+        "updatedSince": "Esta captura no tiene registros modificados."
+      },
+      "errorMessage": "No se han podido aplicar los cambios de la captura debido a un error inesperado.",
+      "filters": {
+        "createdSince": "Eliminado",
+        "deletedSince": "Añadido",
+        "updatedSince": "Modificado"
+      },
+      "header": {
+        "title": "Cambios realizados en",
+        "titleWithMeta": "Cambios realizados en <1>{{sheet}}</1> por <3>{{action}}</3>"
+      },
+      "message": "Aceptar los cambios hace que se unifiquen todos los valores nuevos en tu hoja {{name}}.",
+      "submitButton": "Aceptar cambios",
+      "submitError": "No se han podido aplicar los cambios de la instantánea debido a un error inesperado.",
+      "submitSuccess": "Se han aplicado satisfactoriamente los cambios en la hoja.",
+      "successMessage": "Se han aplicado los cambios a tu hoja.",
+      "summary": {
+        "fields": {
+          "plural": {
+            "first": "{{cells}} celdas en la casilla {{name}}",
+            "last": " y {{cells}} celdas en la casilla {{name}}",
+            "middle": ", {{cells}} celdas en la casilla {{name}}"
+          },
+          "schemaDiff": {
+            "added": {
+              "first": "Se eliminará el campo {{name}}",
+              "last": " y se eliminará el campo {{name}}",
+              "middle": ", se eliminará el campo {{name}}"
+            },
+            "removed": {
+              "first": "se volverá a añadir el campo {{name}}",
+              "last": " y se volverá a añadir el campo {{name}}",
+              "middle": ", se volverá a añadir el campo {{name}}"
+            }
+          },
+          "singular": {
+            "first": "1 celda en la casilla {{name}}",
+            "last": " y 1 celda en la casilla {{name}}",
+            "middle": ", 1 celda en la casilla {{name}}"
+          },
+          "start": " Se han modificado los datos en "
+        },
+        "total": {
+          "plural": {
+            "multipleFields": "Se han cambiado los datos en {{records}} registros en {{fields}} casillas.",
+            "noFields": "Se han cambiado los datos en {{records}} registros.",
+            "oneField": "Se han cambiado los datos en {{records}} registros en 1 casilla."
+          },
+          "singular": {
+            "multipleFields": "Se han cambiado los datos en 1 registro en {{fields}} casillas.",
+            "noFields": "Se han cambiado los datos en 1 registro.",
+            "oneField": "Se han cambiado los datos en 1 registro en 1 casilla."
+          }
+        }
+      },
+      "title": "Se han hecho cambios en"
+    },
+    "cells": {
+      "messages": {
+        "accept": "Si acepta los cambios, todos los valores nuevos se fusionarán en su conjunto de datos.",
+        "current": "Valor actual: {{value}}",
+        "empty": "sin datos",
+        "none": "Tu conjunto de datos se modificará a los valores mostrados.",
+        "restore": "Su conjunto de datos se restaurará a la versión de esta captura.",
+        "snapshot": "Nuevo valor: {{value}}"
+      }
+    },
+    "none": {
+      "empty": {
+        "createdSince": "No se eliminará ningún registro.",
+        "deletedSince": "No se añadirá ningún registro.",
+        "title": "¡No hay nada que ver!",
+        "updatedSince": "No se modificará ningún registro."
+      },
+      "errorMessage": "No se ha podido mostrar una vista preliminar de los cambios debido a un error inesperado.",
+      "filters": {
+        "createdSince": "Eliminar",
+        "deletedSince": "Añadir",
+        "updatedSince": "Modificar"
+      },
+      "header": {
+        "title": "Cambios hechos en",
+        "titleWithMeta": "Revisar los cambios en <1>{{sheet}}</1>"
+      },
+      "message": "La tabla de abajo muestra los cambios en tu hoja {{name}}.",
+      "submitError": "No se han podido transformar los datos debido a un error inesperado.",
+      "submitSuccess": "Se han aplicado correctamente los cambios en tu hoja.",
+      "successMessage": "Se han aplicado los cambios en tu hoja.",
+      "summary": {
+        "fields": {
+          "plural": {
+            "first": "{{cells}} celdas en el campo {{name}}",
+            "last": " y {{cells}} celdas en el campo {{name}}",
+            "middle": ", {{cells}} celdas en el campo {{name}}"
+          },
+          "singular": {
+            "first": "1 celda en el campo {{name}}",
+            "last": " y 1 celda en el campo {{name}}",
+            "middle": ", 1 celda en el campo {{name}}"
+          },
+          "start": " Los datos se modificarán en "
+        },
+        "total": {
+          "plural": {
+            "multipleFields": "Los datos cambiarán en {{records}} registros en {{fields}} campos.",
+            "noFields": "Los datos cambiarán en {{records}} registros.",
+            "oneField": "Los datos cambiarán en {{records}} registros en 1 campo."
+          },
+          "singular": {
+            "multipleFields": "Los datos cambiarán en 1 registro en {{fields}} campos.",
+            "noFields": "Los datos cambiarán en 1 registro.",
+            "oneField": "Los datos cambiarán en 1 registro en 1 campo."
+          }
+        }
+      },
+      "title": "Mostrar una vista preliminar de los cambios hechos en"
+    },
+    "preview": {
+      "cancelButton": "Cancelar",
+      "empty": {
+        "createdSince": "Esta vista previa no tiene registros que vayan a eliminarse.",
+        "deletedSince": "Esta vista previa no tiene registros que vayan a añadirse.",
+        "title": "No hay nada que ver.",
+        "updatedSince": "Esta vista previa no tiene registros que vayan a modificarse."
+      },
+      "errorMessage": "No se han podido previsualizar los cambios debido a un error inesperado.",
+      "filters": {
+        "createdSince": "Eliminar",
+        "deletedSince": "Añadir",
+        "updatedSince": "Modificar"
+      },
+      "header": {
+        "title": "Cambios realizados en",
+        "titleWithMeta": "Previsualizar los cambios realizados en <1>{{sheet}}</1> por <3>{{aiAction}}</3> prompt"
+      },
+      "message": "Tu hoja {{name}} se restaurará a la versión de esta captura.",
+      "submitButton": "Transformar datos",
+      "submitError": "No se han podido transformar los datos debido a un error inesperado.",
+      "submitSuccess": "Los cambios en tu hoja se han aplicado correctamente.",
+      "successMessage": "Los cambios se han aplicado a tu hoja.",
+      "summary": {
+        "fields": {
+          "plural": {
+            "first": "{{cells}} celdas en el campo {{name}}",
+            "last": " y {{cells}} celdas en el campo {{name}}",
+            "middle": "{{cells}} celdas en el campo {{name}}"
+          },
+          "schemaDiff": {
+            "added": {
+              "first": "Se eliminará el campo {{name}}",
+              "last": " y se eliminará el campo {{name}}",
+              "middle": ", se eliminará el campo {{name}}"
+            },
+            "removed": {
+              "first": "se volverá a añadir el campo {{name}}",
+              "last": " y se volverá a añadir el campo {{name}}",
+              "middle": ", se volverá a añadir el campo {{name}}"
+            }
+          },
+          "singular": {
+            "first": "1 celda en el campo {{name}}",
+            "last": " y 1 celda en el campo {{name}}",
+            "middle": "1 celda en el campo {{name}}"
+          },
+          "start": " Se modificarán los datos en "
+        },
+        "total": {
+          "plural": {
+            "multipleFields": "Los datos cambiarán en {{records}} registros a través de {{fields}} campos.",
+            "noFields": "Los datos cambiarán en {{records}} registros.",
+            "oneField": "Los datos cambiarán en {{records}} registros a través de 1 campo."
+          },
+          "singular": {
+            "multipleFields": "Los datos cambiarán en 1 registro a través de {{fields}} campos.",
+            "noFields": "Los datos cambiarán en 1 registro.",
+            "oneField": "Los datos cambiarán en 1 registro a través de 1 campo."
+          }
+        }
+      },
+      "title": "Previsualizar los cambios realizados en"
+    },
+    "restore": {
+      "cancelButton": "Cancelar",
+      "empty": {
+        "createdSince": "Esta captura no tiene registros que vayan a ser eliminados.",
+        "deletedSince": "Esta captura no tiene registros que vayan a ser añadidos.",
+        "title": "¡No hay nada que ver!",
+        "updatedSince": "Esta captura no tiene registros que vayan a ser modificados."
+      },
+      "errorMessage": "No se ha podido restablecer la captura debido a un error inesperado.",
+      "filters": {
+        "createdSince": "Eliminar",
+        "deletedSince": "Añadir",
+        "updatedSince": "Modificar"
+      },
+      "header": {
+        "title": "Cambios que se aplicarán en"
+      },
+      "message": "Tu hoja {{name}} se restablecerá a la versión en esta captura.",
+      "submitButton": "Restablecer",
+      "submitError": "No se ha podido restaurar la instantánea debido a un error inesperado.",
+      "submitSuccess": "Se ha restaurado la hoja a una versión anterior.",
+      "successMessage": "Se ha restablecido tu hoja a una versión anterior.",
+      "summary": {
+        "fields": {
+          "plural": {
+            "first": "{{cells}} celdas en la casilla {{name}}",
+            "last": " y {{cells}} celdas en la casilla {{name}}",
+            "middle": ", {{cells}} celdas en la casilla {{name}}"
+          },
+          "schemaDiff": {
+            "added": {
+              "first": "Se eliminará el campo {{name}}",
+              "last": " y se eliminará el campo {{name}}",
+              "middle": ", se eliminará el campo {{name}}"
+            },
+            "removed": {
+              "first": "se volverá a añadir el campo {{name}}",
+              "last": " y se volverá a añadir el campo {{name}}",
+              "middle": ", se volverá a añadir el campo {{name}}"
+            }
+          },
+          "singular": {
+            "first": "1 celda en la casilla {{name}}",
+            "last": " y 1 celda en la casilla {{name}}",
+            "middle": ", 1 celda en la casilla {{name}}"
+          },
+          "start": " Los datos se modificarán en "
+        },
+        "total": {
+          "plural": {
+            "multipleFields": "Los datos cambiarán en {{records}} registros en {{fields}} casillas.",
+            "noFields": "Los datos cambiarán en {{records}} registros.",
+            "oneField": "Los datos cambiarán en {{records}} registros en 1 casilla."
+          },
+          "singular": {
+            "multipleFields": "Los datos cambiarán en 1 registro en {{fields}} casillas.",
+            "noFields": "Los datos cambiarán en 1 registro.",
+            "oneField": "Los datos cambiarán en 1 registro en 1 casilla."
+          }
+        }
+      },
+      "title": "Los cambios se aplican en"
+    },
+    "tooltips": {
+      "sheet": "{{sheet}} en {{workbook}}"
+    }
+  },
+  "spaceLoadingMessage": "Preparando espacio...",
+  "utils": {
+    "buttons": {
+      "clearAll": "Borrar Todo.",
+      "clearAllLabel": "Borrar todo",
+      "selectAll": "Seleccionar Todo.",
+      "selectAllLabel": "Seleccionar todo"
+    },
+    "modals": {
+      "sizeWarning": {
+        "body": "Por favor, utiliza un dispositivo con una pantalla más grande para poder acceder a todas las funcionalidades. No podemos garantizar que todas las funcionalidades funcionen como se espera en este tamaño de pantalla.",
+        "button": "Continuar de todos modos",
+        "title": "Pantalla demasiado pequeña"
+      }
+    },
+    "poweredByFlatfile": "Desarrollado por Flatfile"
+  },
+  "versionHistory": {
+    "modals": {
+      "default": {
+        "description": "Se ha producido un error inesperado. No se ha aplicado la acción correspondiente"
+      },
+      "delete": {
+        "confirm": {
+          "closeButton": "Cerrar",
+          "description": "¿Estás seguro de que quieres eliminar la versión seleccionada?",
+          "heading": "Eliminar versión",
+          "proceedButton": "Eliminar"
+        },
+        "error": {
+          "closeButton": "Cerrar",
+          "description": "No se ha podido eliminar la versión seleccionada debido a un error inesperado. Si el problema persiste, ponte en contacto con el servicio de asistencia.",
+          "heading": "No se puede eliminar la versión",
+          "retryButton": "Inténtalo de nuevo"
+        },
+        "success": {
+          "closeButton": "Cerrar",
+          "description": "Se ha eliminado la versión seleccionada.",
+          "heading": "Versión eliminada"
+        }
+      }
+    },
+    "panel": {
+      "empty": "Las versiones, una vez generadas, aparecerán aquí. Normalmente, las versiones se generan automáticamente cuando se produce una transformación masiva de datos.",
+      "generatedSnapshot": "Foto generada antes de aplicar la transformación de IA: ",
+      "generatedSnapshotForAiTransform": "Instantánea generada antes de aplicar la Transformación por IA para la solicitud: ",
+      "generatedSnapshotForBulkDelete": "Instantánea generada antes de borrar los registros",
+      "generatedSnapshotForFindReplace": "Instantánea generada antes de aplicar Buscar y reemplazar",
+      "heading": "Historial de la versión",
+      "thisMonth": "Este mes",
+      "versionRestored": "Versión creada antes de la restauración de una versión anterior"
+    },
+    "pill": {
+      "hoverText": "Historial de la versión"
+    }
+  }
+}
