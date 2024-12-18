@@ -546,13 +546,13 @@
       "destinationFields": {
         "dropdownOptions": {
           "doNotImport": "No importar",
-          "keepAsIs": "Mantenga este valor tal como está",
+          "keepAsIs": "Importar mi texto como está",
           "keepAsIsDisabledTooltip": "Añadir una nueva opción a esta lista no es posible. La importación de un valor que no sea una opción válida se mostrará como un error."
         },
-        "heading": "Valores de destino"
+        "heading": "Lo que Pulpos entiende"
       },
       "incomingFields": {
-        "heading": "Valores recibidos",
+        "heading": "Contenido de tu columna",
         "noData": "Celdas sin datos",
         "noDataTooltip": "Puede seleccionar una opción válida para rellenar todas las celdas vacías. También puede dejarlo en blanco."
       },
@@ -562,8 +562,8 @@
       "progressPillAllMapped_one": "{{count}} valores asignados",
       "progressPillAllMapped_other": "{{count}} valor asignado",
       "progressPillAllMapped_zero": "{{count}} value mapped",
-      "subheading": "Estos campos tienen valores que se deben asignar a una lista de opciones válidas.",
-      "title": "Campos del mapa"
+      "subheading": "Verifica que Pulpos entiende el contenido de tus columnas",
+      "title": "Contenido de tus Columnas"
     },
     "mapFields": {
       "destinationFields": {
@@ -605,7 +605,7 @@
       "title": "Encabezados de mapas"
     },
     "mappingPlan": {
-      "preparing": "Preparando mapeo..."
+      "preparing": "Analizando campos"
     },
     "sheetSelection": {
       "cannotLoadFile": "No se puede subir el archivo: {{fileName}}",
