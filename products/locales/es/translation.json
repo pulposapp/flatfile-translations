@@ -1007,12 +1007,12 @@
       },
       "filters": {
         "all": "Todo",
-        "invalid": "Inválido",
+        "invalid": "Filas con Errores",
         "tooltip": {
           "countsError": "Error al cargar los cálculos",
           "countsErrorRetry": "Haz clic para reintentarlo",
           "filter": {
-            "invalid": "inválido",
+            "invalid": "Filas con Errores",
             "total": "total",
             "valid": "válido"
           },
@@ -1026,7 +1026,7 @@
           "filteredBySearchAndError": "Esta base de datos fue filtrada mediante una búsqueda y el filtro de error para mostrar {{filteredCount}} de los {{countString}} {{filter}} registros.",
           "inactiveCount": "{{countString}} {{filter}} registros {{filteredCount}} filtrados"
         },
-        "valid": "Validar"
+        "valid": "Filas Válidas"
       },
       "moreActions": {
         "buttonText": "Más acciones",
@@ -1099,7 +1099,7 @@
         "lockedUntilEditingCompletes": "La acción estará disponible cuando la hoja ya no se esté editando",
         "lockedUntilHookCompletes": "Esta acción estará disponible después de que todos los ganchos hayan terminado de ejecutarse.",
         "lockedUntilJobCompletes": "Esta acción estará disponible después de que el trabajo actual se complete.",
-        "requireAllValid": "Esta acción requiere que todas las filas de todas las hojas sean válidas"
+        "requireAllValid": "Tienes filas con errores. Por favor corrígelos para importar. Puedes ver las filas con errores seleccionando el botón ”Filas con Errores”"
       }
     }
   },
