@@ -273,7 +273,7 @@
         "heading": "No hay descargas disponibles"
       },
       "uploads": {
-        "description": "Arrastra y suelta o sube un archivo para comenzar",
+        "description": "Sube un archivo con tu inventario para comenzar",
         "heading": "Añadir archivos"
       }
     },
