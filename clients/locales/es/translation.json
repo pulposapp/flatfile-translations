@@ -715,7 +715,7 @@
         "description": "Si crees que esto es un error, ponte en contacto con el servicio de asistencia.",
         "heading": "La adición de registros está desactivada"
       },
-      "uploadFile": "Sube un archivo con tu inventario para comenzar"
+      "uploadFile": "Sube un archivo con tus clientes para comenzar"
     },
     "errors": {
       "loading": "No se ha podido recuperar el libro de trabajo.",
